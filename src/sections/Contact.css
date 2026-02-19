@@ -1,0 +1,114 @@
+.contact {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 120px;
+}
+.contact-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 120px;  
+}
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+}
+.contact-info h3 {
+  margin-bottom: 14px;
+}
+.contact-info p {
+  color: #9fb3c8;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+.contact-mail {
+  color: #00f0ff;
+  font-size: 14px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+  border-radius: 14px;
+  background: rgba(11,15,20,0.6);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 18px rgba(0,240,255,0.08);
+}
+.contact-form input,
+.contact-form textarea {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 10px;
+  border-radius: 6px;
+  color: #e6f1ff;
+  outline: none;
+  transition: 0.3s;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #00f0ff;
+  box-shadow: 0 0 10px rgba(0,240,255,0.3);
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.neon-btn.sending {
+  opacity: 0.7;
+}
+.neon-btn.sent {
+  background: rgba(0,240,255,0.15);
+  box-shadow: 0 0 20px rgba(0,240,255,0.6);
+  transform: translateY(-2px);
+}
+.neon-btn.error {
+  background: rgba(255,80,80,0.2);
+}
+.neon-btn.sending {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.neon-btn.sent {
+  background: rgba(0,240,255,0.15);
+  box-shadow: 0 0 20px rgba(0,240,255,0.6);
+  transform: translateY(-2px);
+}
+.neon-btn.error {
+  background: rgba(255,80,80,0.2);
+}
+/* Responsive */
+@media (max-width: 1024px) {
+
+  .contact-container {
+    padding-left: 80px;
+  }
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+/* Responsive */
+@media (max-width: 768px) {
+
+  .contact {
+    padding: 100px 20px 140px;
+  }
+
+  .contact-container {
+    padding-left: 0;
+  }
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
