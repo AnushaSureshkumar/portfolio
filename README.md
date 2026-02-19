@@ -1,16 +1,70 @@
-# React + Vite
+# Anusha — Full Stack Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-black?style=for-the-badge\&logo=javascript)
+![Python](https://img.shields.io/badge/Python-Developer-blue?style=for-the-badge\&logo=python)
+![MySQL](https://img.shields.io/badge/MySQL-Database-black?style=for-the-badge\&logo=mysql)
+![Node.js](https://img.shields.io/badge/Node.js-Backend-green?style=for-the-badge\&logo=node.js)
 
-Currently, two official plugins are available:
+A modern neon-themed developer portfolio showcasing my projects, technical skills, and full-stack development experience.
+Built with performance, responsiveness, and clean UI in mind.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 About The Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This portfolio highlights my journey as a **Full Stack Developer**, featuring:
 
-## Expanding the ESLint configuration
+* Animated hero section with dynamic role switching
+* Floating vertical navigation
+* Interactive tech stack grid
+* Project showcase with live previews
+* EmailJS contact integration
+* Smooth scroll reveal animations
+* Fully responsive design (Desktop • Tablet • Mobile)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+---
+
+## 📂 Featured Projects
+
+### 🌱 AgriAssist — Smart Crop Symptom Reporter
+
+CLI-based agriculture tool that predicts crop diseases and suggests treatments using Python & MySQL.
+
+### 💻 Code369 Website
+
+Academic frontend website built using React with a clean modern UI.
+🌐 https://code369.in
+
+### 🤖 AI SkillSwap
+
+AI-powered full-stack platform where users exchange skills with smart partner matching, summaries, and AI suggestions.
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/AnushaSureshkumar/portfolio.git
+cd portfolio
+npm install
+npm run dev
+```
+
+---
+
+## 📬 Connect With Me
+
+* 🔗 GitHub: https://github.com/AnushaSureshkumar
+* 💼 LinkedIn: https://www.linkedin.com/in/anushas04/
+
+---
+
+## ⭐ Author
+
+**Anusha**
+Full Stack Developer
+
