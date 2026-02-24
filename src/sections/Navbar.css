@@ -5,7 +5,7 @@
   transform: translateY(-50%);
 
   display: flex;
-  flex-direction: column;   
+  flex-direction: column;
   align-items: center;
   gap: 18px;
 
@@ -16,7 +16,7 @@
   backdrop-filter: blur(20px);
   box-shadow: 0 0 25px rgba(0,240,255,0.25);
 
-  z-index: 999;
+  z-index: 9999;
 }
 
 .nav-pill a {
@@ -24,7 +24,6 @@
   font-size: 20px;
   color: #9fb3c8;
   transition: 0.3s;
-
 }
 
 .nav-pill a:hover {
@@ -32,19 +31,60 @@
   transform: scale(1.2);
   text-shadow: 0 0 10px rgba(0,240,255,0.7);
 }
-/* Responsive */
-@media (max-width: 768px) {
 
-  .nav-pill {
-    left: 50%;
-    top: auto;
-    bottom: 130px;
-    transform: translateX(-50%);
-    flex-direction: row;
-    padding: 18px 24px;
-    border-radius: 50px;
+/* ========================= */
+/* 💻 LARGE DESKTOP */
+/* ========================= */
+@media (min-width:1400px){
+  .nav-pill{
+    left:120px;
   }
-  .nav-pill a {
-    font-size: 18px;
+}
+
+/* ========================= */
+/* 💻 LAPTOP / TABLET */
+/* ========================= */
+@media (max-width:1024px){
+  .nav-pill{
+    left:30px;
+    padding:40px 16px;
+  }
+}
+
+/* ========================= */
+/* 📱 TABLET + MOBILE (TOP NAV) */
+/* ========================= */
+@media (max-width:768px){
+
+  .nav-pill{
+    left:50%;
+    top:20px;                 /* 🔥 top position */
+    bottom:auto;
+    transform:translateX(-50%);
+    margin-top: 40px;
+    flex-direction:row;
+    padding:14px 22px;
+    border-radius:50px;
+    gap:22px;
+  }
+
+  .nav-pill a{
+    font-size:18px;
+  }
+}
+
+/* ========================= */
+/* 📱 SMALL MOBILE */
+/* ========================= */
+@media (max-width:480px){
+
+  .nav-pill{
+    top:16px;
+    padding:12px 18px;
+    gap:18px;
+  }
+
+  .nav-pill a{
+    font-size:17px;
   }
 }

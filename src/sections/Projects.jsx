@@ -57,7 +57,7 @@ export default function Projects() {
       <div className="projects-container">
 
         <h2 className="section-title reveal">
-          MY <span className="neon-accent">PROJECTS</span>
+         <span className="span"> MY </span><span className="neon-accent">PROJECTS</span>
         </h2>
 
         <div className="projects-grid">

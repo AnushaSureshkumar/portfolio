@@ -51,7 +51,6 @@ export default function Contact() {
     Interested in collaborating or building something amazing?
     Feel free to reach out anytime.
     </p>
-    <span className="contact-mail">anushasureshkumarrr@gmail.com</span>
     </div>
     <form ref={form} onSubmit={sendEmail} className="contact-form reveal">
     <input

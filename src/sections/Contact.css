@@ -85,30 +85,57 @@
 .neon-btn.error {
   background: rgba(255,80,80,0.2);
 }
-/* Responsive */
-@media (max-width: 1024px) {
+/* ---------- LARGE TABLETS ---------- */
+@media (max-width:1024px){
 
-  .contact-container {
-    padding-left: 80px;
+  .contact-container{
+    padding: 0 60px;   /* instead of padding-left */
   }
 
-  .contact-wrapper {
-    grid-template-columns: 1fr;
+  .contact-wrapper{
+    grid-template-columns:1fr;
   }
+
 }
-/* Responsive */
-@media (max-width: 768px) {
 
-  .contact {
-    padding: 100px 20px 140px;
+
+/* ---------- TABLET & MOBILE ---------- */
+@media (max-width:768px){
+
+  .contact{
+    padding:100px 20px 120px;
+    align-items:center;
   }
 
-  .contact-container {
-    padding-left: 0;
+  .contact-container{
+    padding:0;
   }
 
-  .contact-wrapper {
-    grid-template-columns: 1fr;
-    gap: 30px;
+  .contact-form{
+    padding:20px;
   }
+
+}
+
+
+/* ---------- SMALL MOBILES ---------- */
+@media (max-width:480px){
+
+  .contact{
+    padding:90px 16px 100px;
+  }
+
+  .contact-info h3{
+    font-size:clamp(20px,5vw,26px);
+  }
+
+  .contact-info p{
+    font-size:14px;
+  }
+
+  .contact-mail{
+    font-size:13px;
+    word-break:break-word; /* email overflow prevent */
+  }
+
 }

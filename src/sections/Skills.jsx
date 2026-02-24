@@ -28,58 +28,45 @@ export default function Skills() {
     { icon: <SiFlask />, name: "Flask" },
     { icon: <FaNodeJs />, name: "Node.js" },
   ];
-useEffect(() => {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("active");
-        } else {
-          entry.target.classList.remove("active");
-        }
-      });
-    },
-    {
-      threshold: 0.15,
-    }
-  );
 
-  const reveals = document.querySelectorAll(".reveal");
-  reveals.forEach((el) => observer.observe(el));
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          entry.isIntersecting
+            ? entry.target.classList.add("active")
+            : entry.target.classList.remove("active");
+        });
+      },
+      { threshold: 0.15 }
+    );
 
-  return () => {
-    reveals.forEach((el) => observer.unobserve(el));
-  };
-}, []);
+    const reveals = document.querySelectorAll(".reveal");
+    reveals.forEach((el) => observer.observe(el));
 
-
+    return () => {
+      reveals.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
 
   return (
     <section id="skills" className="skills">
+      <div className="skills-container">
 
-  <div className="skills-container">
+        <h2 className="section-title reveal">
+          TECH <span className="neon-accent">STACK</span>
+        </h2>
 
-    <h2 className="section-title reveal">
-
-      TECH  <span className="neon-accent">STACK</span>
-    </h2>
-
-    <div className="skills-grid">
-{skills.map((skill, i) => (
-  <div
-    className="skill-item reveal"
-    key={i}
-    style={{ "--i": i }}
-  >
-          <div className="skill-icon">{skill.icon}</div>
-          <span className="skill-name">{skill.name}</span>
+        <div className="skills-grid">
+          {skills.map((skill, i) => (
+            <div className="skill-item reveal" key={i} style={{ "--i": i }}>
+              <div className="skill-icon">{skill.icon}</div>
+              <span className="skill-name">{skill.name}</span>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
 
-  </div>
-
-</section>
-
+      </div>
+    </section>
   );
 }

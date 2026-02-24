@@ -122,3 +122,21 @@
     gap: 20px;
   }
 }
+.span{
+  font-size: 55px;
+}
+.span{
+  font-size:55px;
+}
+
+@media (max-width:1024px){
+  .span{
+    font-size:42px;
+  }
+}
+
+@media (max-width:600px){
+  .span{
+    font-size:28px;
+  }
+}
